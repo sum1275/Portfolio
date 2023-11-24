@@ -15,11 +15,11 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
+import finance from '../images/portfolio/finance.jpg'
+import kanban from '../images/portfolio/kanban.jpg'
+import quote from '../images/portfolio/quote.jpg'
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import kanban from '../images/portfolio/kanban.jpg'
-import finance from '../images/portfolio/finance.jpg'
-import quote from '../images/portfolio/quote.jpg'
 import {
   About,
   ContactSection,
