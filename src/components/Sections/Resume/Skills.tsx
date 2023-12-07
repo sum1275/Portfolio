@@ -1,8 +1,6 @@
+import React from 'react';
 
-import React from 'react'
-
-
-function SkillGroup() {
+const SkillGroup = React.memo(() => {
   const skills = [
     { name: "C", icon: "/c-icon.png", percentage: 70 },
     { name: "C++", icon: "/c++-icon.png", percentage: 70 },
@@ -25,13 +23,11 @@ function SkillGroup() {
     // Add more skills as needed
   ];
 
- 
   return (
-    <div className="flex  ">
+    <div className="flex">
       <div className="flex flex-wrap md:justify-start lg:justify-start mb-4 md:w-full lg:w-full">
         {skills.map((skill, index) => (
           <div key={index} className="w-20 p-2 m-2 border rounded-md shadow-md text-center">
-            {/* Placeholder for the image */}
             <img
               src={skill.icon}
               alt={`${skill.name} Icon`}
@@ -43,15 +39,6 @@ function SkillGroup() {
       </div>
     </div>
   );
-  
-  
-}
+});
 
-
-export default SkillGroup
-
-
-
-
-  
-
+export default SkillGroup;
