@@ -1,13 +1,12 @@
-import {FC, memo} from 'react';
+import { FC, memo } from 'react';
 
-const SkillGroup:FC = memo(() => {
+const SkillGroup: FC = memo(() => {
   const skills = [
     { name: "C", icon: "/c-icon.png", percentage: 70 },
     { name: "C++", icon: "/c++-icon.png", percentage: 70 },
     { name: "JavaScript", icon: "/js-icon.png", percentage: 70 },
     { name: "HTML", icon: "/html-icon.png", percentage: 60 },
     { name: "CSS", icon: "/css-icon.png", percentage: 60 },
-    
     { name: "SQL", icon: "/sql-icon.png", percentage: 65 },
     { name: "React.js", icon: "/react-icon.png", percentage: 75 },
     { name: "Node.js", icon: "/node-icon.png", percentage: 70 },
@@ -40,5 +39,7 @@ const SkillGroup:FC = memo(() => {
     </div>
   );
 });
-SkillGroup.displayName = 'SkillGroup'
+
+SkillGroup.displayName = 'SkillGroup';
+
 export default SkillGroup;
