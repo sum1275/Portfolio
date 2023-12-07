@@ -1,6 +1,6 @@
-import React from 'react';
+import {FC, memo} from 'react';
 
-const SkillGroup = React.memo(() => {
+const SkillGroup:FC = memo(() => {
   const skills = [
     { name: "C", icon: "/c-icon.png", percentage: 70 },
     { name: "C++", icon: "/c++-icon.png", percentage: 70 },
@@ -40,5 +40,5 @@ const SkillGroup = React.memo(() => {
     </div>
   );
 });
-
+SkillGroup.displayName = 'SkillGroup'
 export default SkillGroup;
