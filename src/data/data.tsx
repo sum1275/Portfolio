@@ -20,6 +20,7 @@ import kanban from '../images/portfolio/kanban.jpg'
 import quote from '../images/portfolio/quote.jpg'
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import yesLogistics from '../images/portfolio/yesLogistics.png'
 import {
   About,
   ContactSection,
@@ -220,12 +221,13 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://github.com/sum1275/final-polaris.git',
     image: quote,
   },
-  // {
-  //   title: 'Project title 4',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage4,
-  // },
+  {
+    title: 'Yes Logistics Website',
+    description: 'Designed a sleek and responsive Yes Logistics website using React, Vite, and Tailwind CSS, combining seamless functionality with modern aesthetics. The website offers an intuitive user experience, reflecting the efficiency and innovation of Yes Logistics\' services. Elevating the brand\'s online presence through a dynamic and visually appealing React-based interface.',
+    url: 'https://yes-logistics.vercel.app/',
+    image: yesLogistics,
+  }
+  
   // {
   //   title: 'Project title 5',
   //   description: 'Give a short description of your project here.',

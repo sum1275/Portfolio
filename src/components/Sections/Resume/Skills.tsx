@@ -27,8 +27,8 @@ function SkillGroup() {
 
  
   return (
-    <div className="flex  md:flex-row">
-      <div className="flex flex-wrap md:justify-between mb-4">
+    <div className="flex  ">
+      <div className="flex flex-wrap md:justify-start lg:justify-start mb-4 md:w-full lg:w-full">
         {skills.map((skill, index) => (
           <div key={index} className="w-20 p-2 m-2 border rounded-md shadow-md text-center">
             {/* Placeholder for the image */}
