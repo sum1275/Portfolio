@@ -12,6 +12,9 @@
     "sitemap": "yarn next-sitemap"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.16",
     "@heroicons/react": "^2.0.18",
     "autoprefixer": "^10.4.14",

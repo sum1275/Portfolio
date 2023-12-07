@@ -1,35 +1,57 @@
-import {FC, memo, PropsWithChildren, useMemo} from 'react';
 
-import {Skill as SkillType, SkillGroup as SkillGroupType} from '../../../data/dataDef';
+import React from 'react'
 
-export const SkillGroup: FC<PropsWithChildren<{skillGroup: SkillGroupType}>> = memo(({skillGroup}) => {
-  const {name, skills} = skillGroup;
+
+function SkillGroup() {
+  const skills = [
+    { name: "C", icon: "/c-icon.png", percentage: 70 },
+    { name: "C++", icon: "/c++-icon.png", percentage: 70 },
+    { name: "JavaScript", icon: "/js-icon.png", percentage: 70 },
+    { name: "HTML", icon: "/html-icon.png", percentage: 60 },
+    { name: "CSS", icon: "/css-icon.png", percentage: 60 },
+    
+    { name: "SQL", icon: "/sql-icon.png", percentage: 65 },
+    { name: "React.js", icon: "/react-icon.png", percentage: 75 },
+    { name: "Node.js", icon: "/node-icon.png", percentage: 70 },
+    { name: "RxJS", icon: "/rxjs-icon.png", percentage: 65 },
+    { name: "MongoDB", icon: "/mongodb-icon.png", percentage: 60 },
+    { name: "jQuery", icon: "/jquery-icon.png", percentage: 50 },
+    { name: "Angular", icon: "/angular-icon.png", percentage: 65 },
+    { name: "Angular Material", icon: "/angular-material-icon.png", percentage: 60 },
+    { name: "Next.js", icon: "/nextjs-icon.png", percentage: 70 },
+    { name: "Tailwind CSS", icon: "/tailwindcss-icon.png", percentage: 65 },
+    { name: "Express.js", icon: "/expressjs-icon.png", percentage: 70 },
+    { name: "Socket.io", icon: "/socketio-icon.jpg", percentage: 80 },
+    // Add more skills as needed
+  ];
+
+ 
   return (
-    <div className="flex flex-col">
-      <span className="text-center text-lg font-bold">{name}</span>
-      <div className="flex flex-col gap-y-2">
+    <div className="flex  md:flex-row">
+      <div className="flex flex-wrap md:justify-between mb-4">
         {skills.map((skill, index) => (
-          <Skill key={`${skill.name}-${index}`} skill={skill} />
+          <div key={index} className="w-20 p-2 m-2 border rounded-md shadow-md text-center">
+            {/* Placeholder for the image */}
+            <img
+              src={skill.icon}
+              alt={`${skill.name} Icon`}
+              className="w-12 h-12 mx-auto mb-2"
+            />
+            <span className="text-sm font-medium">{skill.name}</span>
+          </div>
         ))}
       </div>
     </div>
   );
-});
+  
+  
+}
 
-SkillGroup.displayName = 'SkillGroup';
 
-export const Skill: FC<{skill: SkillType}> = memo(({skill}) => {
-  const {name, level, max = 10} = skill;
-  const percentage = useMemo(() => Math.round((level / max) * 100), [level, max]);
+export default SkillGroup
 
-  return (
-    <div className="flex flex-col">
-      <span className="ml-2 text-sm font-medium">{name}</span>
-      <div className="h-5 w-full overflow-hidden rounded-full bg-neutral-300">
-        <div className="h-full rounded-full bg-orange-400" style={{width: `${percentage}%`}} />
-      </div>
-    </div>
-  );
-});
 
-Skill.displayName = 'Skill';
+
+
+  
+
