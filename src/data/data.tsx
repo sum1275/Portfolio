@@ -18,9 +18,9 @@ import heroImage from '../images/header-background.webp';
 import finance from '../images/portfolio/finance.jpg'
 import kanban from '../images/portfolio/kanban.jpg'
 import quote from '../images/portfolio/quote.jpg'
+import yesLogistics from '../images/portfolio/yesLogistics.png'
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
-import yesLogistics from '../images/portfolio/yesLogistics.png'
 import {
   About,
   ContactSection,
