@@ -15,12 +15,16 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 // import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import finance from '../images/portfolio/finance.jpg'
-import kanban from '../images/portfolio/kanban.jpg'
-import quote from '../images/portfolio/quote.jpg'
-import yesLogistics from '../images/portfolio/yesLogistics.png'
+import finance from '../images/portfolio/finance.jpg';
+import kanban from '../images/portfolio/kanban.jpg';
+import quote from '../images/portfolio/quote.jpg';
+import yesLogistics from '../images/portfolio/yesLogistics.png';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+import currencyConverter from '../images/portfolio/currencyConverter.png';
+import unicarta from '../images/portfolio/unicarta.png';
+import chatbot from '../images/portfolio/chatbot.png';
+import trainBooking from '../images/portfolio/trainBooking.png';
 import {
   About,
   ContactSection,
@@ -67,12 +71,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      As a <strong className="text-stone-100">Full Stack Software Engineer </strong> based in Ranchi, I bring a wealth of experience from my tenure at MissCallPay, where I contributed to the development of impactful web applications.
+        As a <strong className="text-stone-100">Full Stack Software Engineer </strong> based in Ranchi, I bring a wealth
+        of experience from my tenure at MissCallPay, where I contributed to the development of impactful web
+        applications.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-      Outside the realm of coding, I find joy in engaging <strong className="text-stone-100">Chess</strong>,
-      matches during my leisure moments.{' '}
-        
+        Outside the realm of coding, I find joy in engaging <strong className="text-stone-100">Chess</strong>, matches
+        during my leisure moments.{' '}
       </p>
     </>
   ),
@@ -205,53 +210,62 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Expense Tracker ',
-    description: 'Crafting sophisticated enterprise solutions for expense tracking, our mission is to empower businesses with insightful data extracted from bank statements, fostering informed decision-making and strategic choices.',
+    description:
+      'Crafting sophisticated enterprise solutions for expense tracking, our mission is to empower businesses with insightful data extracted from bank statements, fostering informed decision-making and strategic choices.',
     url: 'https://github.com/sum1275/expence_tracker_backend.git',
     image: finance,
   },
   {
     title: 'Kanban App',
-    description: 'Revolutionizing task management with our Kanban app, we provide a streamlined platform for efficient workflow visualization, task organization, and collaboration.',
+    description:
+      'Revolutionizing task management with our Kanban app, we provide a streamlined platform for efficient workflow visualization, task organization, and collaboration.',
     url: 'https://github.com/sum1275/Kanban-App.git',
     image: kanban,
   },
   {
     title: 'Fancy Quote Generator',
-    description: 'Unleash creativity with our Fancy Quote Generator, a vibrant tool allowing users to customize and share visually appealing quotes in an instant.',
+    description:
+      'Unleash creativity with our Fancy Quote Generator, a vibrant tool allowing users to customize and share visually appealing quotes in an instant.',
     url: 'https://github.com/sum1275/final-polaris.git',
     image: quote,
   },
   {
     title: 'Yes Logistics Website',
-    description: 'Designed a sleek and responsive Yes Logistics website using React, Vite, and Tailwind CSS, combining seamless functionality with modern aesthetics. The website offers an intuitive user experience, reflecting the efficiency and innovation of Yes Logistics\' services. Elevating the brand\'s online presence through a dynamic and visually appealing React-based interface.',
+    description:
+      "Designed a sleek and responsive Yes Logistics website using React, Vite, and Tailwind CSS, combining seamless functionality with modern aesthetics. The website offers an intuitive user experience, reflecting the efficiency and innovation of Yes Logistics' services. Elevating the brand's online presence through a dynamic and visually appealing React-based interface.",
     url: 'https://yes-logistics.vercel.app/',
     image: yesLogistics,
-  }
-  
-  // {
-  //   title: 'Project title 5',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage5,
-  // },
-  // {
-  //   title: 'Project title 6',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage6,
-  // },
-  // {
-  //   title: 'Project title 7',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage7,
-  // },
-  // {
-  //   title: 'Project title 8',
-  //   description: 'Give a short description of your project here.',
-  //   url: 'https://reactresume.com',
-  //   image: porfolioImage8,
-  // },
+  },
+
+  {
+    title: 'Unicarta e-commerce',
+    description:
+      "Designed and implemented a dynamic e-commerce platform featuring user-centric functionalities including 'Add to Cart' for seamless product selection and a 'Checkout' process with discount code validation. Incorporated special offers such as a 10% discount code for every nth order, enhancing customer engagement. On the administrative side, the system auto-generates discount codes post-nth orders and offers comprehensive analytics on sales, total revenue, discount usage, and overall discount impact, providing valuable insights for business optimization.",
+    url: 'https://unicarta.vercel.app/',
+    image: unicarta,
+  },
+
+  {
+    title: 'Train Seat Booking System ',
+    description:
+      'The project offers an effective train seat booking system for an 80-seat coach, optimizing seat assignments to ensure groups of up to seven can sit together in consecutive rows. It allows for multiple bookings until full and provides instant updates on seat availability and selections. This user-friendly solution streamlines the booking process and efficiently addresses seat distribution challenges, enhancing passenger convenience.',
+    url: 'https://unstop-frontend-one.vercel.app/',
+    image: trainBooking,
+  },
+  {
+    title: 'Chatbot flow builder ',
+    description:
+      'This project is focused on building a simple Chatbot Flow Builder using React. The goal is to create a tool that allows users to visually construct the flow of a chatbot by connecting messages together, determining the sequence of interactions. The design aims for extensibility, facilitating the easy addition of new features and node types in the future.',
+    url: 'https://chatbot-flow-builder-six.vercel.app/',
+    image: chatbot,
+  },
+  {
+    title: 'Currency Converter ',
+    description:
+      "Built with React Vite and Tailwind CSS, this currency converter app offers a sleek, responsive user interface for instant currency exchange rate calculations. It leverages the latest web technologies for fast, efficient conversions across a wide range of currencies. The app's intuitive design ensures a smooth, user-friendly experience for global users.",
+    url: 'https://currency-converter-sum1275.vercel.app/',
+    image: currencyConverter,
+  },
   // {
   //   title: 'Project title 9',
   //   description: 'Give a short description of your project here.',
@@ -303,16 +317,11 @@ export const experience: TimelineItem[] = [
     title: 'FullStack Developer',
     content: (
       <p>
-• Developed the login panel for MissCallPay.<br></br>
-• Integrated Axis Bank's BBPS, expanding MissCallPay's utility and potential
-revenue streams.<br></br>
-• Created a mobile backend merchant registration system for MissCallPay,
-enabling merchants to conduct transactions.<br></br>
-• Designed the P2OM onboarding for other platform merchants such as GPay
-and PhonePay, expanding MissCallPay's user base.<br></br>
-• Developed a biller reconciliation system for MissCallPay, ensuring accurate
-payment processing and reducing errors.<br></br>
-
+        • Developed the login panel for MissCallPay.<br></br>• Integrated Axis Bank's BBPS, expanding MissCallPay's
+        utility and potential revenue streams.<br></br>• Created a mobile backend merchant registration system for
+        MissCallPay, enabling merchants to conduct transactions.<br></br>• Designed the P2OM onboarding for other
+        platform merchants such as GPay and PhonePay, expanding MissCallPay's user base.<br></br>• Developed a biller
+        reconciliation system for MissCallPay, ensuring accurate payment processing and reducing errors.<br></br>
       </p>
     ),
   },
@@ -322,9 +331,7 @@ payment processing and reducing errors.<br></br>
     title: 'Web Developer Intern',
     content: (
       <p>
-        • Developed Company Website<br></br>
-        • Implemented analytics and error reporting
-
+        • Developed Company Website<br></br>• Implemented analytics and error reporting
       </p>
     ),
   },
@@ -390,7 +397,7 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sum1275'},
-//  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  //  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/sumit-kumar-sinha-320108188/'},
   // {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/Sumitku01036495'},
