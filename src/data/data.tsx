@@ -212,7 +212,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Expense Tracker ',
     description:
       'Crafting sophisticated enterprise solutions for expense tracking, our mission is to empower businesses with insightful data extracted from bank statements, fostering informed decision-making and strategic choices.',
-    url: 'https://github.com/sum1275/expence_tracker_backend.git',
+    url: 'https://github.com/sum1275/expence_tracker_frontend.git',
     image: finance,
   },
   {
